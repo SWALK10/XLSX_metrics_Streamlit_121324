@@ -1,0 +1,9 @@
+
+{
+"providers": [
+    {
+        "type": "openai",
+        "url": "https://api.openrouter.ai/v1"
+    }
+]
+}

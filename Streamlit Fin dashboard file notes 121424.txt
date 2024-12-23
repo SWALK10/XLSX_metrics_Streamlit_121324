@@ -1,0 +1,18 @@
+Current Module Structure Documentation
+src/data/stock_fetcher.py: Handles YFinance data fetching and caching
+src/data/etf_manager.py: ETF data management and processing
+src/data/excel_manager.py: Excel file operations
+src/models/performance_metrics.py: Core metrics calculations
+src/models/metrics_writer.py: Writes metrics to Excel
+New Module Structure for Streamlit Integration
+Code
+CopyInsert
+streamlit_app/
+├── components/
+│   ├── ticker_input.py      # New: Handle ticker input and validation
+│   ├── metrics_display.py   # Existing: Display metrics
+│   └── charts.py           # Future: For visualizations
+├── utils/
+│   ├── ticker_validator.py  # New: Ticker validation logic
+│   └── excel_reader.py     # Existing: Read Excel data
+└── metrics_test.py         # Main Streamlit app

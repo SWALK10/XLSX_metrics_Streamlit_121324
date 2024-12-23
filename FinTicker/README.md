@@ -1,0 +1,2 @@
+# FinTicker
+Financial Ticker Dashboard

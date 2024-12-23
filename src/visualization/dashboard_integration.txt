@@ -1,0 +1,17 @@
+# Add to dashboard_xlsx_viewer_v4_test2.py
+# After metrics display:
+
+try:
+    if excel_path and os.path.exists(excel_path):
+        st.markdown("---")
+        st.subheader("Relative Performance")
+        
+        # Create and display chart
+        rs_chart = RelativeStrengthChart()
+        fig = rs_chart.create_chart(excel_path)
+        if fig:
+            st.plotly_chart(fig, use_container_width=True)
+        else:
+            st.warning("Unable to create relative performance chart")
+except Exception as e:
+    st.error(f"Error displaying relative performance chart: {str(e)}")
